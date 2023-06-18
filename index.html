@@ -1,0 +1,269 @@
+<html lang="en">
+	
+
+<!-- Mirrored from ico.arbnothing.xyz/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Jun 2023 22:28:58 GMT -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="assets/img/logo-icon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ARB NOTHING TOKEN</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com/">
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" />
+				<link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+		<link href="assets/css/style9a249a24.css?v1.0.19" rel="stylesheet">
+	</head>
+	<body>
+		<div class="dashboard">
+			<div class="sidebar">
+				<a class="sidebar__logo" href="https://arbnothing.xyz/";>
+					<img src="assets/img/logo-icon.png" class="attachment-full size-full" alt="" loading="lazy">
+				</a>
+				<div class="step-indicator is-active side-step-1" style="cursor: pointer;">1</div>
+				<div class="step-indicator side-step-2">2</div>
+				<div class="step-indicator side-step-3">3</div>
+			</div>
+			<div class="dashboard__content">
+				<header class="header mt-3">
+					<div class="container ">
+						<h2 class="section-header__title">Welcome to 
+							<span style="color: #fff;"><strong>ARB NOTHING TOKEN</strong></span>
+							<img src="assets/img/logo-icon-2.png" alt="" class="img-fluid">
+						</h2>
+						<div class="header__btns">
+							<span class="connectWallet" style="margin-left: 3px;">
+								<button class="button accent-green connectToNetwork">Connect Wallet
+								</button>
+							</span>
+                       	</div>
+					</div>
+                </header>
+				<div class="step">
+					<div class="container">
+						<div class="row">
+							<div class="step__col-8">
+								<div class="step-1">
+									<div class="section-header">
+										
+										<div class="section-header__subText">How many NOTHING Tokens would you like to buy?</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="input-group">
+												<label class="form-label">Total Amount (ETH)</label>
+												<input class="form-contorl bnb_value" type="text" id="bnb_value" autocomplete="off" min="0" placeholder="Enter ETH Amount">
+												<div class="bnb_message text-danger mt-1"></div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="input-group ">
+												<label class="form-label" for="tokens_value">number of tokens</label>
+												<div class="dummy-input">
+													<div class="dummy-input__two" id="token_qty"></div>
+												</div>
+												<div id="error-tokens" class="text-danger mt-1"></div>
+											</div>
+										</div>
+										<div class="col-md-12 col-12">
+											<div class="input-group ">
+												<label class="form-label" for="bnbAddress">Arbitrum Network Address</label>
+												<div class="dummy-input">
+													<div class="dummy-input__two" id="bnbAddress"></div>
+												</div>
+												
+												<div id="error-address" class="text-danger mt-1"></div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="input-group">
+												<label class="form-label" for="currency" >Payment method</label>
+												<select class="form-contorl form-select" id="currency" name="currency">
+												  <option value="1">ETH</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="input-group">
+												<label class="form-label" for="payment" >Payment Mode</label>
+												<select class="form-contorl form-select" id="payment">
+												  <option value="1">Metamask</option>
+												  <option value="2">Trustwallet</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<button type="button" class="button rounded-small accent-purple-bordered w100 j-content-center" id="btn-reset">Reset</button>
+										</div>
+										<div class="col-md-6">
+											<button type="button" class="button rounded-small accent-purple w100 j-content-center" id="buy-btn">Buy Now</button>
+										</div>
+                                      <div class="col-md-6">
+											<button class="button rounded-small accent-purple w100 j-content-center" id="buy-btn" onclick="openLink()">connect mobile </button>
+										</div>
+									</div>
+								</div>
+								<div class="step-2 d-none">
+									<div class="section-header ">
+										<h2 class="section-header__title ">Confirmation</h2>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<div class="input-group">
+												<div class="dummy-input">
+													<div class="dummy-input__one">Number of Tokens (NOTHING)</div>
+													<div class="dummy-input__two"><strong><span class="num_token">0</span></strong></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="input-group">
+												<div class="dummy-input">
+													<div class="dummy-input__one">Token Receiver Address</div>
+													<div class="dummy-input__two"><strong><span class="address">0x00000000....asASAS</span></strong></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="input-group">
+												<div class="dummy-input">
+													<div class="dummy-input__one">Payment Method</div>
+													<div class="dummy-input__two"><strong>ETH</strong></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="input-group">
+												<div class="dummy-input">
+													<div class="dummy-input__one">Payment Mode</div>
+													<div class="dummy-input__two "><strong class="currency-type">Metamask</strong></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="input-group">
+												<div class="dummy-input total-payable">
+													<div class="dummy-input__one">Total Payable</div>
+													<div class="dummy-input__two"><strong><span class="total_payable">0.0</span> ETH</strong></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6"><button type="button" class="button rounded-small accent-purple-bordered w100 j-content-center" id="back-btn">Back</button></div>
+										<div class="col-md-6"><button type="button" class="button rounded-small accent-purple w100 j-content-center" id="confirm-btn"><img src="assets/img/loader.gif" class="loader" style="display:none;" >&nbsp;&nbsp;&nbsp; Confirm</button></div>
+									</div>
+								</div>
+							</div>
+							<div class="step__col-4">
+								<div class="order-summary">
+									<div class="order-summary__card">
+										<div class="order-summary__title">Transaction Summary</div>
+										<div class="order-summary__item">
+											<span class="order-summary__field">Token Rate</span>
+											<span class="order-summary__value">1 ETH =  1,000,000 NOTHING</span></span>
+										</div>
+										<div class="order-summary__item">
+											<span class="order-summary__field">Total Tokens</span>
+											<span class="order-summary__value"><span class="num_token">0</span> NOTHING</span>
+										</div>
+										<div class="order-summary__item-divider"></div>
+										<div class="order-summary__item mb-5">
+											<span class="order-summary__field">Total USD</span>
+											<span class="order-summary__value">$<span class="total_usd">0</span></span>
+										</div>
+										<div class="order-summary__item">
+											<span class="order-summary__field">Transaction Currency</span>
+											<span class="order-summary__value">ETH <span class="bnbValue">($0)</span></span>
+										</div>
+										<div class="order-summary__item">
+											<span class="order-summary__field">Payment Mode</span>
+											<span class="order-summary__value currency-type">MetaMask</span>
+										</div>
+										<div class="order-summary__item-divider"></div>
+										<title>Barra de progreso de Ethereum recaudados</title>
+										<div class="progress-bar">
+											<div id="ethereum-progress" class="progress"></div>
+										  </div>
+										  
+										  <div id="eth-raise"></div>
+
+										<p>SoftCap: 10 ETH</p>
+										<p>HardCap: 35 ETH</p>
+
+										  <script src="../unpkg.com/axios%401.4.0/dist/axios.min.js"></script>
+																			  </div>
+									<footer class="footer">
+										<div class="footer__copyright">© 2023. NOTHING All Rights Reserved</div>
+									</footer>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="vector-section d-none">
+					<div class="Transaction-Failed">
+						<img src="assets/img/transaction-failed.svg" alt="Transaction Failed!">
+						<div class="section-header ">
+							<h2 class="section-header__title ">Transaction <span>Failed!</span></h2>
+						</div>
+						<div class="confirmation-note">Unfortunately something went wrong during payment.<br>You haven't been charged anything. Do you want to go back to the order summary to retry?</div>
+						<button type="button" class="button rounded-small accent-purple" id="try-btn">Try again</button>
+					</div>
+					<div class="Transaction-Success">
+						<img src="assets/img/transaction-success.svg" alt="Transaction Success!">
+						<div class="section-header ">
+							<h2 class="section-header__title ">Transaction <span>Successful!</span></h2>
+						</div>
+						<div class="confirmation-note">You have successfully bought NOTHING Token.</div>
+						<button type="button" class="button rounded-small accent-purple" id="buy-again-btn">Buy again</button>	
+					</div>
+				</div>
+				<footer class="footer footer-2 d-none">
+					<div class="footer__copyright">© 2023. NOTHING All Rights Reserved</div>
+				</footer>
+			</div>
+		</div>
+		<script src="cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+		<script src="cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+		<script type="text/javascript">
+			const token_rate_usd = '0.0014';
+			const min_buy = '0.001';
+			let bnb_usd = 1600;
+		  
+			function updateBNBUSD() {
+
+			  fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&amp;vs_currencies=usd')
+				.then(response => response.json())
+				.then(data => {
+				  const bnbPrice = data.ethereum.usd;
+				  bnb_usd = bnbPrice;
+				  $('.bnbValue').html("($" + bnb_usd + ")");
+				})
+				.catch(error => {
+				  console.log('Error al obtener el precio de ETH en USD:', error);
+				});
+			}
+		  
+			updateBNBUSD();
+		  
+			setInterval(updateBNBUSD, 5 * 60 * 1000); 
+			const network = '0xa4b1';
+			const fees = '0';
+			const token_contract = '0x0C3455feCdf7B73D75EFE832beaAA32cE55Dd5db';
+			const bnb_presale = '0x83319cd578e353946c9E1f79d451128cE3a16FcB'
+			const net_err = 'Connect to Arbitrum Network!'
+			const web3_provider = 'https://arb1.arbitrum.io/rpc'
+			const total = parseFloat('0')
+		</script>>
+		<script src="assets/js/web3.min9a249a24.js?v1.0.19"></script>
+		<script src="assets/js/wizard9a249a24.js?v1.0.19"></script>
+		<script src="assets/js/custom9a249a24.js?v1.0.19"></script>
+  		<script src="assets/js/open.js"></script>
+		  <script src="progress.js"></script>
+	</body>
+
+
+<!-- Mirrored from ico.arbnothing.xyz/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Jun 2023 22:29:02 GMT -->
+</html>
